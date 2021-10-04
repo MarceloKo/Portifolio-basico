@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body, ul,li,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+
+}
+
+body{
+    min-width: 1500px;
+}
+
+h1,h2,h3,h4,p{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/******************MENU****************/
+#fundoMenu {
+    top: 0;
+    width: 100%;
+    min-height: 100px;
+    background: linear-gradient(236.85deg, #1f6edb 10.26%, #2c578b 90.03%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    min-width: 1500px;
+    z-index: 5;
+}
+.header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo img{
+    width: 400px;
+    height: auto;
+}
+.menu{
+    display: flex;
+    padding: 20px;
+}
+
+.menu li a{
+    margin-left: 10px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+}
+
+.menu li a:hover{
+    transition: 0.3s;
+    background: #03cffc;
+}
+
+/********** footer ************/
+.fundoFooter{
+    margin-top: 20px;
+    background: black;
+    width: 100%;
+    height: 80px;
+    min-width: 1500px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+   
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.redeSocial{
+    display: flex;
+    justify-content:space-around;
+    width: 20%;
+    height: 30px;
+   
+    align-items: center;
+    
+}
+.redeSocial a{
+    line-height: 0;
+}
+.redeSocial a:hover h4{
+    color: rgb(255, 128, 24);
+  
+}
+.redeSocial h4{
+    color: #fff;
+    text-align: center;
+}
+.redeSocial img{
+    max-width: 35px;
+    margin-top: -15px;
+}
+
+/*************CORPO*************/
+.container{
+    width: 1300px;
+    margin: auto;
+}
+
+.content {
+    min-height: 100vh;
+
+}
+
+#apresentacao,.butonApresentacao{
+    display: flex;
+    justify-content: center;
+}
+#apresentacao img{
+    margin-top: 65px;
+    width: 80%;
+    border-radius: 5px;
+    height: auto;
+    border: rgb(0, 0, 0,0.2) solid 3px;
+  
+}
+
+.listaButonApresentacao{
+    display: flex;
+    padding-bottom: 20px;
+    border-radius: 20px;
+
+}
+.listaButonApresentacao li{
+    margin: 10px;
+    color:transparent;
+    background: rgb(165, 165, 165);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    
+}
+
+.valoresEmpresa{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.valoresEmpresa > div {
+width: 400px;
+height: auto;
+
+}
+#fundoCorpo1{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    background: #ECF4FF;
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    
+}
+#fundoCorpo1-1{
+    display: flex;
+    align-items: center;
+    background:linear-gradient(230.65deg, #499dfee8 27.49%, #9CC8FC 83.19%);
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+#fundoCorpo2{
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+   
+    z-index: 4;
+    border-radius: 20px;
+    margin: auto;
+    
+}
+.texto1Corpo1-1{
+    margin: 0  20px 0 90PX;
+    min-width: 550px;
+}
+.texto2Corpo1-1{
+    margin: 0 90px 0 0;
+    min-width: 550px;
+}
+
+.textoCorpo1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin: 0 90px;
+    
+}
+.textoCorpo1 h1{
+    line-height: 0;
+}
+.textoCorpo1 h3{
+    margin-top: -3px;
+}
+.textoCorpo1 h4{
+    line-height:1;
+}
+.textoCorpo1 p{
+    margin-top: -15px;
+    font-size:14pt;
+    text-align: justify;
+}
+
+.textoCorpo2{
+    padding: 20px;
+    margin: 0 90px 50px 90px;
+}
+.textoCorpo2 h1{
+    
+    font-size: 50px;
+    text-shadow: 0px 1px 3px rgb(119, 119, 119);
+    line-height: 0.3;
+    text-align: center;
+        line-height: 0.3;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.textoCorpo2 h3{
+    line-height: 0.3;
+    text-align: center;
+}
+
+.conteudoCorpo2{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    background: #ECF4FF;
+    
+}
+.conteudoCorpo2 h4{
+    font-family: 'Libre Baskerville', serif;
+    line-height: 0;
+}
+.conteudoCorpo2 p{
+    padding-bottom: 25px;
+}
+.contato{
+    display: flex;
+    align-items:center;
+    
+}
+
+#caixaNome{
+    width: 250px;
+    height: 25px;
+    margin-right: 10px;
+    text-align: center;
+}
+#caixaEmail{
+    width: 250px;
+    height: 25px;
+    text-align: center;
+}
+#caixaMensagem{
+    width: 520px;
+    height: 120px;
+    text-align: center;
+
+}
+#localizacao h4{
+    text-align: center;
+}
+#enviarContato{
+    color: #FFF;
+    font-weight: 600;
+    background: rgb(48, 48, 48);
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    height: 35px;
+}
+.divButton{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.divButton button{
+    cursor: pointer;
+}
+
+.sobre {
+    margin-top: 100px;
+}
+
+.sobreResumo {
+    display:flex;
+    
+}
+
+.sobreResumo > div{
+    text-align: justify;
+}
+
+
+
+.sobreResumo > div > p {
+    font-size: 14pt;
+}
+
+.profile img{
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.14);
+    margin-right: 100px;
+    border-radius: 50%;
+    width: 350px;
+    height: auto;
+}
+
+
+.curriculoRedeSocial{
+    display: flex;
+    justify-content:space-between;
+    width: 50%;
+    align-items: center;
+
+    
+}
+.button1{
+    padding: 15px 30px;
+    background: rgb(146, 210, 245);
+    font-weight: 600;
+    margin:10px 0 0 0px;
+    border-radius: 2px;
+    width: 200px;
+    background: rgb(65, 82, 105);
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family:sans-serif;
+
+}
+.button1:hover{
+    transition: 0.3s;
+    background: #03cffc;
+}
+
+
+.curriculoRedeSocial img{
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.gitLinkedin a{
+    padding: 0;
+    border-radius: 50%;
+}
+
+
+.sobreXP{
+    display: flex;
+}
+.sobreXP h3{
+    text-align: center;
+}
+.sobreXP > div{
+margin: 50px;
+}
+
+.xpLista li{
+    padding: 1px 20px 20px 20px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.14);
+    margin-top: 10px;
+    border-radius: 10px;
+    min-width: 500px;
+    min-height: 120px;
+    text-align: justify;
+}
+.xpLista li h4{
+    margin-bottom: 5px;
+}
