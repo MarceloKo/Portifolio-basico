@@ -62,7 +62,7 @@
                             width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="entrarContato">
-                        <div class="contato">
+                        <!-- <div class="contato">
                             <div>
                                 <h4>Nome</h4>
                                 <input id="caixaNome" placeholder="Insira nome"></input>
@@ -77,8 +77,28 @@
                             <h4>Mensagem</h4>
                             <input id="caixaMensagem" placeholder="Insira a mensagem"></input>
                         </div>
-                        <div class="divButton"><button id="enviarContato">enviar</button></div>
+                        <div class="divButton"><button id="enviarContato">enviar</button></div> -->
 
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="card">
+                            <input type="hidden" name="accessKey" value="b066f1bd-2d98-4ad4-863e-e2a9ed115188">
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato.html">
+                            <div>
+                                <label for="inputNome">Nome: </label>
+                                <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
+                                
+    
+                                <label for="inputEmail">Email: </label>
+                                <input type="email" id="inputEmail" name="email" required maxlength="50" minlength="2">
+                                
+                            </div>
+
+                            <label for="textAreaMensagem">Mensagem: </label>
+                            <textarea name="message"  id="textAreaMensagem" required maxlength="200"></textarea>
+
+                            <button type="submit" value="Submit" id="enviarContato">enviar</button>
+
+
+                        </form>
 
                     </div>
                 </div>

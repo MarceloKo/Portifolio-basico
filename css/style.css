@@ -57,6 +57,7 @@ a{
     border-radius: 5px;
     color: #000;
     font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu li a:hover{
@@ -182,7 +183,6 @@ height: auto;
     padding-top: 60px;
     color: rgb(0, 0, 0);
     width: 100%;
-   
     z-index: 4;
     border-radius: 20px;
     margin: auto;
@@ -191,6 +191,7 @@ height: auto;
 .texto1Corpo1-1{
     margin: 0  20px 0 90PX;
     min-width: 550px;
+    text-align: justify;
 }
 .texto2Corpo1-1{
     margin: 0 90px 0 0;
@@ -202,6 +203,7 @@ height: auto;
     flex-direction: column;
     padding-top: 30px;
     margin: 0 90px;
+    
     
 }
 .textoCorpo1 h1{
@@ -222,6 +224,8 @@ height: auto;
 .textoCorpo2{
     padding: 20px;
     margin: 0 90px 50px 90px;
+    
+    
 }
 .textoCorpo2 h1{
     
@@ -253,33 +257,43 @@ height: auto;
 .conteudoCorpo2 p{
     padding-bottom: 25px;
 }
-.contato{
+.entrarContato{
     display: flex;
     align-items:center;
     
 }
 
-#caixaNome{
-    width: 250px;
+.card {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.card label{
+    margin-top: 10px;
+    font-weight: 700;
+}
+#inputNome{
+    width: 230px;
     height: 25px;
     margin-right: 10px;
     text-align: center;
 }
-#caixaEmail{
-    width: 250px;
+#inputEmail{
+    width: 230px;
     height: 25px;
     text-align: center;
 }
-#caixaMensagem{
-    width: 520px;
+#textAreaMensagem{
+    width: 100%;
     height: 120px;
     text-align: center;
 
 }
-#localizacao h4{
-    text-align: center;
-}
+
 #enviarContato{
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
     color: #FFF;
     font-weight: 600;
     background: rgb(48, 48, 48);
