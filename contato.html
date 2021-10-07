@@ -15,7 +15,7 @@
         <div class="container">
             <header class="header">
                 <div class="logo">
-                    <a><img src="/imagens/logo.png"></a>
+                    <a><img src="./imagens/logo.png"></a>
                 </div>
                 <div class="menuPrincipal">
                     <nav>
@@ -62,22 +62,6 @@
                             width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="entrarContato">
-                        <!-- <div class="contato">
-                            <div>
-                                <h4>Nome</h4>
-                                <input id="caixaNome" placeholder="Insira nome"></input>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <input id="caixaEmail" placeholder="Insira email para contato"></input>
-                            </div>
-
-                        </div>
-                        <div>
-                            <h4>Mensagem</h4>
-                            <input id="caixaMensagem" placeholder="Insira a mensagem"></input>
-                        </div>
-                        <div class="divButton"><button id="enviarContato">enviar</button></div> -->
 
                         <form action="https://api.staticforms.xyz/submit" method="post" class="card">
                             <input type="hidden" name="accessKey" value="b066f1bd-2d98-4ad4-863e-e2a9ed115188">
@@ -85,15 +69,15 @@
                             <div>
                                 <label for="inputNome">Nome: </label>
                                 <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
-                                
-    
+
+
                                 <label for="inputEmail">Email: </label>
                                 <input type="email" id="inputEmail" name="email" required maxlength="50" minlength="2">
-                                
+
                             </div>
 
                             <label for="textAreaMensagem">Mensagem: </label>
-                            <textarea name="message"  id="textAreaMensagem" required maxlength="200"></textarea>
+                            <textarea name="message" id="textAreaMensagem" required maxlength="200"></textarea>
 
                             <button type="submit" value="Submit" id="enviarContato">enviar</button>
 
