@@ -9,6 +9,7 @@ body, ul,li,p{
 
 }
 
+
 h1,h2,h3,h4,p{
     font-family: 'Roboto', sans-serif;
 }
@@ -36,7 +37,7 @@ a{
     
 }
 .logo img{
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 .menu{
@@ -61,16 +62,12 @@ a{
 
 /********** footer ************/
 .fundoFooter{
-    margin-top: 20px;
+    margin-top: 30px;
     background: black;
     width: 100%;
     height: 80px;
-   
     position: relative;
     bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
     display: flex;
    
 }
@@ -176,12 +173,32 @@ filter: contrast(90%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     background: #ECF4FF;
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     margin-top: 40px;
     display: flex;
     align-items: center;
+    text-align: justify;
     
 }
+.textoCorpo1 p{
+    margin-top: -15px;
+    font-size:13pt;
+}
+
+.textoCorpo1{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+.textoCorpo1 h1{
+    line-height: 0;
+    font-size: 19pt;
+}
+.fundoCorpo1 h3{
+    margin-top:-3px;   
+}
+
+
 
 .fundoCorpo1-1{
     display: flex;
@@ -190,14 +207,25 @@ filter: contrast(90%);
     width: 100%;
     height: 400px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    
+    text-align: justify;
+  
+}
+.fundoCorpo1-1 h1{
+    font-size: 19pt;
+    line-height: 0;
 }
 .fundoCorpo1-1 > div {
     padding: 0 50px;
+    min-width: 550px;
 }
 .fundoCorpo1-1 p{
     font-size:13pt;
 }
+
+.fundoCorpo1-1 h3{
+    margin-top:-3px;
+}
+
 
 #fundoCorpo2{
     padding-top: 60px;
@@ -208,38 +236,6 @@ filter: contrast(90%);
     margin: auto;
     
 }
-.texto1Corpo1-1{
-   
-    min-width: 550px;
-    text-align: justify;
-}
-.texto2Corpo1-1{
-
-    min-width: 550px;
-}
-
-.textoCorpo1{
-    display: flex;
-    flex-direction: column;
-  
-    margin: 0 50px;
-    
-    
-}
-.textoCorpo1 h1{
-    line-height: 0;
-}
-.textoCorpo1 h3{
-    margin-top: -3px;
-}
-.textoCorpo1 h4{
-    line-height:1;
-}
-.textoCorpo1 p{
-    margin-top: -15px;
-    font-size:13pt;
-    text-align: justify;
-}
 
 .textoCorpo2{
     padding: 20px;
@@ -249,7 +245,7 @@ filter: contrast(90%);
 }
 .textoCorpo2 h1{
     
-    font-size: 50px;
+    font-size: 40px;
     text-shadow: 0px 1px 3px rgb(119, 119, 119);
     line-height: 0.3;
     text-align: center;
@@ -267,9 +263,23 @@ filter: contrast(90%);
     display: flex;
     padding: 30px;
     justify-content: space-around;
+    margin-bottom: 250px;
     background: #ECF4FF;
-    
 }
+
+.enderecos {
+    display: flex;
+    align-items: center;
+
+}
+.formulario{
+    display: flex;
+    align-items: center;
+}
+#localizacao{
+    margin-left: 10px;
+}
+
 .conteudoCorpo2 h4{
     font-family: 'Libre Baskerville', serif;
     line-height: 0;
@@ -277,6 +287,7 @@ filter: contrast(90%);
 .conteudoCorpo2 p{
     padding-bottom: 25px;
 }
+
 .entrarContato{
     display: flex;
     align-items:center;
@@ -350,8 +361,13 @@ filter: contrast(90%);
 .sobreResumo > div > p {
     font-size: 14pt;
 }
+.resumo h1{
+    text-shadow: 0px 1px 3px rgb(119, 119, 119);
+    font-family: 'Libre Baskerville', serif;
+}
 
 .profile img{
+
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.14);
     margin-right: 100px;
     border-radius: 50%;
@@ -360,14 +376,7 @@ filter: contrast(90%);
 }
 
 
-.curriculoRedeSocial{
-    display: flex;
-    justify-content:space-between;
-    width: 50%;
-    align-items: center;
 
-    
-}
 .button1{
     padding: 15px 30px;
     background: rgb(146, 210, 245);
@@ -387,7 +396,12 @@ filter: contrast(90%);
     background: #03cffc;
 }
 
-
+.curriculoRedeSocial{
+    display: flex;
+    justify-content:space-between;
+    width: 50%;
+    align-items: center;
+}
 .curriculoRedeSocial img{
     margin-top: 10px;
     border-radius: 50%;
@@ -431,8 +445,7 @@ margin: 50px;
 
 @media screen and (max-width: 1300px){
     .container{
-        width: 800px;
-      
+        width: 700px;
     }
     .fundoCorpo1-1{
       flex-direction: column;
@@ -449,10 +462,154 @@ margin: 50px;
     .curriculoRedeSocial a{
         margin-right: 15px;
     }
-    .sobre{
+    .sobreXP{
         display: flex;
         flex-direction: column;
+    }
+
+    .conteudoCorpo2 {
+        flex-direction: column;
+    } 
+    .enderecos{
+        display: flex;
+        justify-content: space-around;
+    }
+    .formulario{
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+    }
+   .fundoCorpo1-1{
+    display: flex;
+    justify-content: center;
+       
+   }
+   .texto1Corpo1-1{
+       margin-bottom: 25px;
+   }
+   .sobreResumo{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       margin: 0px 20px;
+   }
+   .profile img{
+       margin: 0;
+   }
+   .curriculoRedeSocial1{
+       display: flex;
+       justify-content: center;
+   }
+   .curriculoRedeSocial{
+       display: flex;
+       justify-content: center;
+   }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 300px;
+       
+    }
+    body{
+        width: 100%;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .apresentacao{
+        height: 180px;
+    }
+    .valoresEmpresa{
+        display: flex;
+        flex-direction: column;
+    }
+    .valoresEmpresa > div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .valoresEmpresa p{
+        padding: 0 20px;
+    }
+    .fundoCorpo1{
+        padding: 40px 0;
+    }
+    .fundoCorpo1 h1{
+        line-height: 1;
+    }
+    .fundoCorpo1-1 h1{
+        line-height: 1;
+    }
+    .fundoCorpo1-1{
+        padding: 40px 0;
+        height: 100%;
+        
+    }
+    .fundoCorpo1-1 > div{
+        min-width: 0;
+    }
+
+    /* SOBRE */
+    .profile img{
+        max-width: 250px;
+    }
+    .resumo {
+       width: 100%;
+    }
+    .sobreResumo h1{
+        text-align: center;
+    }
+    
+    .xpLista li{
+        min-width: 0;
+    }
+
+    /* CONTATO */
+ 
+    .textoCorpo2{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .textoCorpo2 h1{
+        line-height: 1;
+        text-align: center;
+    }
+    .enderecos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #localizacao{
+        padding: 30px 0;
 
     }
+    #localizacao iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        width: 100%;
+        padding:0 15px;
+        
+    }
    
+    #inputNome{
+        width: 100%;
+        margin: 10px 0;
+    
+    }
+    #inputEmail{
+       width: 100%;
+        margin: 10px 0;
+    }
+    .conteudoCorpo2{
+        margin-bottom: 100px;
+    }
 }
