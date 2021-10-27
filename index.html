@@ -11,76 +11,78 @@
 </head>
 
 <body>
-    <div id="fundoMenu">
-        <div class="container">
-            <header class="header">
-                <div class="logo">
-                    <a><img src="./imagens/logo.png"></a>
-                </div>
-                <div class="menuPrincipal">
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </div>
-    </div>
+    <!--HEADER -->
+    <header id="fundoMenu">
 
-
-
-
-    <div class="container">
-        <div>
-            <div class="apresentacao">
-                <img class="selected" src="./imagens/apresentacao1.jpeg">
-                <img src="./imagens/apresentacao2.jpeg">
-                <img src="./imagens/apresentacao3.jpg">
+        <div class="header container">
+            <div class="logo">
+                <a href="index.html"><img src="./imagens/logo.png"></a>
             </div>
-            <div class="butonApresentacao">
+            <div class="menuPrincipal">
                 <nav>
-                    <ul class="listaButonApresentacao">
-                        <li onclick="butonApresentacao(0)"></li>
-                        <li onclick="butonApresentacao(1)"><a></a></li>
-                        <li onclick="butonApresentacao(2)"><a></a></li>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="valoresEmpresa">
+
+    </header>
+    <!--FIM HEADER -->
+
+    <!-- INTRODUÇÃO -->
+    <div data-anime="300" class="container">
+        <div class="apresentacao">
+            <img class="selected" src="./imagens/apresentacao1.jpg">
+            <img src="./imagens/apresentacao2.jpg">
+            <img src="./imagens/apresentacao3.jpg">
+        </div>
+        <div class="butonApresentacao">
+            <nav>
+                <ul class="listaButonApresentacao">
+                    <li class="selectedColor" onclick="butonApresentacao(0)"></li>
+                    <li onclick="butonApresentacao(1)"><a></a></li>
+                    <li onclick="butonApresentacao(2)"><a></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--FIM INTRODUÇÃO -->
+    <!-- MISSAO EMPRESA -->
+    <div class="container">
+        <div class="valoresEmpresa" data-anime="600">
             <div>
-                <img src="http://modelo-012.ep.site.com.br/wp-content/uploads/sites/51398/2014/07/icone_zoom.png">
+                <img src="./imagens/icone_zoom.png">
                 <h4>MISSÃO</h4>
                 <p>Desenvolver projetos com desempenho excepcional com a qualidade que o cliente merece. </p>
             </div>
             <div>
-                <img src="http://modelo-012.ep.site.com.br/wp-content/uploads/sites/51398/2014/07/icone_ideia.png">
+                <img src="./imagens/icone_ideia.png">
                 <h4>VISÃO</h4>
                 <p>Ser reconhecido pelo excelente trabalho através de códigos limpos, organizados e bem elaborado para o
                     negocio do cliente. .
                 </p>
             </div>
             <div>
-                <img src="http://modelo-012.ep.site.com.br/wp-content/uploads/sites/51398/2014/07/icone_construir.png">
+                <img src="./imagens/icone_construir.png">
                 <h4>VALORES</h4>
                 <p>Excelência e Eficiência;<br>Respeito e Valorização das pessoas;<br>Ética e comprometimento.</p>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="fundoCorpo1">
+    <!-- FIM MISSAO EMPRESA -->
+    <div class="container" data-anime="900">
+        <div class="fundoCorpo1 textoJustificado">
             <div class="textoCorpo1">
-                <h1>QUE BOM VÊ-LO POR AQUI</h1>
-                <h3>VOCÊ ESTÁ CONHECENDO MEU WEB SITE</h3>
-                <h4>COMUNICAÇÃO EFICAZ</h4>
+                <h3>QUE BOM VÊ-LO POR AQUI</h3>
+                <h4>VOCÊ ESTÁ CONHECENDO MEU WEB SITE</h4>
+                <h5>COMUNICAÇÃO EFICAZ</h5>
                 <p>A comunicação entre o cliente e a empresa é super importante, tendo a técnologia ao nosso lado, a
                     comunicação fica quase instantânea.
                     Por isso valorizo seu tempo, oferecendo suporte o mais rápido possivel.<br></p>
-                <h4>TRABALHO EM EQUIPE</h4>
+                <h5>TRABALHO EM EQUIPE</h5>
                 <p>Gosto de trabalhar em equipe e ter bastante diálogo sobre o projeto para que possamos dar o
                     melhor para a empresa e cliente. Ouvir opniões diferentes abre um leque de oportunidades e
                     imaginações para a elaboração do projeto, criticas são sempre bem vindas e aceitas para que
@@ -90,17 +92,17 @@
         </div>
 
 
-        <div class="fundoCorpo1-1">
+        <div class="fundoCorpo1-1 textoJustificado">
             <div class="texto1Corpo1-1">
-                <h1>DESENVOLVEMOS SOLUÇÕES</h1>
-                <h3>SEU CLIENTE BUSCA RESULTADOS</h3>
+                <h3>DESENVOLVEMOS SOLUÇÕES</h3>
+                <h4>SEU CLIENTE BUSCA RESULTADOS</h4>
                 <p>Meu objetivo com o desenvolvimento do web site é satisfazer os desejos do cliente, sempre visando
                     aperfeiçoar. Mostrando passo a passo do desenvolvimento para o cliente para obter a avaliação do
                     projeto.</p>
             </div>
             <div class="texto2Corpo1-1">
-                <h1>DOMINANDO O MUNDO DIGTAL</h1>
-                <h3>ELE EXISTE E ESTÁ PRESENTE SEMPRE NAS VIDAS DAS PESSOAS</h3>
+                <h3>DOMINANDO O MUNDO DIGTAL</h3>
+                <h4>ELE EXISTE E ESTÁ PRESENTE SEMPRE NAS VIDAS DAS PESSOAS</h4>
                 <p>Os cliente novos sempre buscam informações sobre a empresa, assim o site vem para mostrar
                     detalhes e informações sobre a empresa que não acha em outros lugares. </p>
             </div>
@@ -128,7 +130,7 @@
         </div>
     </div>
 
-
+    <script src="./js/simple-anime.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

@@ -10,36 +10,35 @@
 </head>
 
 <body>
-
-    <div id="fundoMenu">
-        <div class="container">
-            <header class="header">
-                <div class="logo">
-                    <a><img src="./imagens/logo.png"></a>
-                </div>
-                <div class="menuPrincipal">
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+    <!--HEADER -->
+    <header id="fundoMenu">
+        <div class="header container">
+            <div class="logo">
+                <a href="index.html"><img src="./imagens/logo.png"></a>
+            </div>
+            <div class="menuPrincipal">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
 
+    </header>
+    <!-- FIM HEADER -->
 
 
 
     <div class="container">
         <div id="fundoCorpo2">
             <div class="textoCorpo2">
-                <h1>Entre em contato !</h1>
+                <h1 data-anime="300">Entre em contato !</h1>
 
             </div>
-            <div class="conteudoCorpo2">
+            <div class="conteudoCorpo2" data-anime="600">
                 <div class="enderecos">
 
                     <div>
@@ -71,7 +70,7 @@
 
                         <form action="https://api.staticforms.xyz/submit" method="post" class="card">
                             <input type="hidden" name="accessKey" value="b066f1bd-2d98-4ad4-863e-e2a9ed115188">
-                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato.html">
+                            <input type="hidden" name="redirectTo" value="https://marceloko.netlify.app/contato.html">
                             <div class="campoFormulario">
                                 <label for="inputNome">Nome: </label>
                                 <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
@@ -116,6 +115,8 @@
             </div>
         </div>
     </div>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
