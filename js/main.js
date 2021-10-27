@@ -1,5 +1,6 @@
 new SimpleAnime();
 
+
 /* SLIDE  */
 
 let time = 5000,
