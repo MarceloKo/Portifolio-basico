@@ -191,11 +191,14 @@ a{
     padding-bottom: 20px;
     border-radius: 20px;
     margin-top: -5px;
-    
+    align-items: center;
 
 }
 .listaButonApresentacao .selectedColor {
-    background: #2c578b;
+    background: #262626;
+    width: 13px;
+    height: 13px;
+    
 }
 .listaButonApresentacao li{
     margin: 10px;
@@ -211,7 +214,7 @@ a{
 
 
 .valoresEmpresa{
-    margin-top: 30px;
+    margin: 60px 0;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -247,6 +250,7 @@ filter: contrast(90%);
     display: flex;
     flex-direction: column;
     margin: 0 50px;
+    margin-top: -50px;
 }
 .textoCorpo1 h2{
     font-size: 23px;
@@ -275,8 +279,8 @@ filter: contrast(90%);
 }
 
 
-.fundoCorpo1-1 h3{
-    margin-top:-10px;
+.fundoCorpo1-1 h5{
+    margin-top: -15px;
     
 }
 
@@ -389,6 +393,9 @@ filter: contrast(90%);
     border-radius: 5px;
     height: 35px;
 }
+#enviarContato:hover{
+    background: #ff9626;
+}
 .divButton{
     padding-top: 15px;
     display: flex;
@@ -420,13 +427,14 @@ filter: contrast(90%);
     border-radius: 50%;
     width: 350px;
     height: auto;
+    
 }
 
 
 
 .button1{
     padding: 15px 30px;
-    background: rgb(146, 210, 245);
+    
     font-weight: 600;
     margin:10px 0 0 0px;
     border-radius: 2px;
@@ -440,7 +448,7 @@ filter: contrast(90%);
 }
 .button1:hover{
     transition: 0.3s;
-    background: #03cffc;
+    background: #ff9626;
 }
 
 .curriculoRedeSocial{
@@ -456,10 +464,7 @@ filter: contrast(90%);
     height: 50px;
 }
 
-.gitLinkedin a{
-    padding: 0;
-    border-radius: 50%;
-}
+
 
 
 .sobreXP{
@@ -481,6 +486,9 @@ margin: 50px;
     min-width: 500px;
     min-height: 120px;
    
+}
+.xpLista li:hover{
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
 }
 .xpLista li h4{
     margin-bottom: 5px;
