@@ -1,5 +1,6 @@
-new SimpleAnime();
-
+if (window.SimpleAnime) {
+    new SimpleAnime;
+}
 
 /* SLIDE  */
 
