@@ -69,9 +69,9 @@
                 <div class="formulario">
                     <div class="entrarContato">
 
-                        <form action="https://api.staticforms.xyz/submit" method="post" class="card">
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="card card_ativo">
                             <input type="hidden" name="accessKey" value="b066f1bd-2d98-4ad4-863e-e2a9ed115188">
-                            <input type="hidden" name="redirectTo" value="https://marceloko.netlify.app/contato.html">
+                            <input type="hidden" name="redirectTo" value="https://marceloko.space/contato.html">
                             <div class="campoFormulario">
                                 <label for="inputNome">Nome: </label>
                                 <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
@@ -85,7 +85,7 @@
                             <label for="textAreaMensagem">Mensagem: </label>
                             <textarea name="message" id="textAreaMensagem" required maxlength="200"></textarea>
 
-                            <button type="submit" value="Submit" id="enviarContato">enviar</button>
+                            <button type="submit" onclick="enviar" value="Submit" id="enviarContato">enviar</button>
 
 
                         </form>
@@ -99,23 +99,21 @@
 
     </div>
 
-    <div class="fundoFooter">
-        <div class="container">
-            <div class="footer">
-                <div class="redeSocial">
-                    <a href="https://github.com/MarceloKo">
-                        <h4>Github</h4>
-                    </a>
-                    <a href="https://www.linkedin.com/in/marcelo-kohlhase/">
-                        <h4>Linkedin</h4>
-                    </a>
-                    <a href="https://www.instagram.com/marcelokohlhase/">
-                        <h4>Instagram</h4>
-                    </a>
-                </div>
+    <section class="fundoFooter">
+        <div class="container footer">
+            <div class="redeSocial">
+                <a href="https://github.com/MarceloKo" target="_blank">
+                    <h4>Github</h4>
+                </a>
+                <a href="https://www.linkedin.com/in/marcelo-kohlhase/" target="_blank">
+                    <h4>Linkedin</h4>
+                </a>
+                <a href="https://www.instagram.com/marcelokohlhase/" target="_blank">
+                    <h4>Instagram</h4>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 
     <script src="./js/simple-anime.js"></script>
     <script src="./js/main.js"></script>
